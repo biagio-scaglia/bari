@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtra Locali Bari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Filtra Locali Bari</h1>
+
+    <!-- Filtri -->
+    <label for="typeFilter">Filtra per tipo di locale:</label>
+    <select id="typeFilter">
+        <option value="">Tutti</option>
+        <option value="Pizzeria">Pizzeria</option>
+        <option value="Ristorante">Ristorante</option>
+        <option value="Ristorante etnico (giapponese)">Ristorante etnico (giapponese)</option>
+        <option value="Ristorante etnico (greco)">Ristorante etnico (greco)</option>
+        <option value="Ristorante etnico (asiatico)">Ristorante etnico (asiatico)</option>
+        <option value="Ristorante etnico (indiano)">Ristorante etnico (indiano)</option>
+        <option value="Ristorante etnico (marocchino)">Ristorante etnico (marocchino)</option>
+        <option value="Ristorante etnico (messicano)">Ristorante etnico (messicano)</option>
+        <option value="Gelateria">Gelateria</option>
+        <option value="Kebabberia">Kebabberia</option>
+        <option value="Pasticceria">Pasticceria</option>
+        <option value="Pub/Steakhouse">Pub/Steakhouse</option>
+        <option value="Friggitoria/Pescheria">Friggitoria/Pescheria</option>
+        <option value="Rosticceria">Rosticceria</option>
+    </select>
+
+    <br>
+
+    <label for="priceFilter">Filtra per fascia di prezzo:</label>
+    <select id="priceFilter">
+        <option value="">Tutti</option>
+        <option value="€">€</option>
+        <option value="€€">€€</option>
+        <option value="€€€">€€€</option>
+    </select>
+
+    <!-- Tabella dei locali -->
+    <table id="restaurantTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo di locale</th>
+                <th>Indirizzo</th>
+                <th>Fascia di prezzo (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- I dati verranno inseriti qui tramite JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>Developed by <a href="https://www.biagioscaglia.com" target="_blank">Biagio Scaglia</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

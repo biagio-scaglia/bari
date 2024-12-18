@@ -1,0 +1,233 @@
+/* Generale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #2C3E50;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 1.1em;
+    margin-right: 10px;
+    color: #34495E;
+    display: block;
+    margin-top: 20px;
+}
+
+select {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border: 1px solid #BDC3C7;
+    border-radius: 8px;
+    background-color: #ECF0F1;
+    color: #34495E;
+    width: 100%;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #3498DB;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+/* Layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    background-image: linear-gradient(135deg, #f5f7fa, #e3e9f1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.container h2 {
+    font-size: 1.8em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.container .section {
+    margin-bottom: 30px;
+}
+
+/* Tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 18px 15px;
+    text-align: left;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+th {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #FFFFFF;
+}
+
+tr:hover {
+    background-color: #F1F1F1;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #7F8C8D;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+footer a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query per dispositivi con larghezza <= 1200px (Desktop medio) */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        margin-top: 40px;
+    }
+
+    select {
+        font-size: 1.05em;
+    }
+
+    th, td {
+        font-size: 1em;
+    }
+}
+
+/* Media Query per dispositivi con larghezza <= 768px (Tablet) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    select {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    th, td {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+/* Media Query per dispositivi con larghezza <= 480px (Smartphone) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    th, td {
+        font-size: 0.85em;
+        padding: 10px;
+    }
+
+    select {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    /* Ottimizzazione tabella per dispositivi mobili */
+    table {
+        font-size: 0.9em;
+    }
+
+    /* Adattamento per la larghezza della tabella su dispositivi mobili */
+    th, td {
+        padding: 10px 8px;
+    }
+}
+
+/* Animazione per la transizione del contenuto */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pulsante di reset (se aggiunto in futuro) */
+button.reset {
+    background-color: #E74C3C;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button.reset:hover {
+    background-color: #C0392B;
+}
